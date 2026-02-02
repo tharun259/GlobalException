@@ -10,10 +10,8 @@ import jakarta.validation.Payload;
 @Constraint(validatedBy = PatternValidation.class)
 @Target({ElementType.FIELD,ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
- 
 public @interface PasswordValidate {
 	
- 
 	String message() default "Invalid Password";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};

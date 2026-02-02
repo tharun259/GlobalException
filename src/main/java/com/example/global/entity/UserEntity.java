@@ -38,7 +38,7 @@ public class UserEntity {
 	@Positive
 	private float salary;
 	@Min(value=0,message="cannot be negative")
-	@Max(value=0,message="cannot exceed 100")
+	@Max(value=100,message="cannot exceed 100")
 	private int marks;
 	@Pattern(regexp = "[0-9]{10}",message="Invalid phone number")
 	private String phoneno;
